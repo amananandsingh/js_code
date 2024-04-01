@@ -1,0 +1,51 @@
+<script>
+let maxsal=0;
+let j;
+let a=(employees)=>{
+        employees.forEach((employee,index) => {
+           
+            if(employee.sal>maxsal){
+                maxsal=employee.sal;
+                j=index;
+            }
+            return maxsal;
+            console.log(employee[i],index[i]);
+
+          
+           
+        });
+      
+   
+        console.log(maxsal,'max sal');
+        console.log(employees[j].name,'name is');
+         }
+         let employees=[{
+        name:'raghu',
+        age:23,
+        sal:5600000
+        },
+        {
+        name:'raju',
+        age:23,
+        sal:9000090999
+        },
+        {
+        name:'shrikal',
+        age:19,
+        sal:87700
+       },
+       {
+        name:'madhav',
+        age:18,
+        sal:78600
+       },
+       {
+        name:'lokesh',
+        age:19,
+        sal:50090000000000
+       }
+    ]
+   a(employees);
+
+
+    </script>
