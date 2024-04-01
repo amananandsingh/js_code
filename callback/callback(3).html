@@ -1,0 +1,40 @@
+<head>asynchronous<//callback> condition</head>
+<script>
+  console.log("WELCOME");
+  getuser(1,(user)=>{
+    console.log(user);
+    getRepos(user.name,(repos)=>{
+        console.log(repos);
+        getCommits(repos[0],(commits)=>{
+            console.log(commits);
+        })
+    })
+  });
+  console.log("END");
+
+  function getuser(id,callback){
+    setTimeout(()=>{
+        console.log("read from db..");
+        callback({id:id,name:'AMAN'})
+    },3000)
+        
+  }
+  function getRepos(id,callback){
+    setTimeout(()=>{
+        console.log("read from db..");
+        callback( ['p1', 'p2', 'p3'])
+    },3000)
+        
+  }
+  function getCommits(id,callback){
+    setTimeout(()=>{
+        console.log("read from db..");
+        callback( ['c1', 'c2', 'c3'])
+    },3000)
+        
+  }
+   
+
+
+
+    </script>
