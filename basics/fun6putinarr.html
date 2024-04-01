@@ -1,0 +1,45 @@
+<head>OUTPUT OF VALUE(SAL)>10000</head>
+<script>
+    // let maxsal=employee[0]
+let a=(employees)=>{       //whole function loop
+    let myarray=[];     //let,const,var works inside the function    
+    employees.forEach((employee) => {    //for each loop
+            if(employee.sal>10000){                
+                myarray.push(employee.name);
+
+
+                
+            }   
+            // console.log(employee[i]);
+        });     
+        console.log(myarray); 
+       
+         }
+let employees=[{
+        name:'raghu',
+        age:23,
+        sal:56000
+        },
+        {
+        name:'raju',
+        age:23,
+        sal:900
+        },
+        {
+        name:'shrikal',
+        age:19,
+        sal:87700
+       },
+       {
+        name:'madhav',
+        age:18,
+        sal:78600
+       },
+       {
+        name:'lokesh',
+        age:19,
+        sal:50090
+       }
+    ]
+    a(employees);
+    </script>
